@@ -22,4 +22,4 @@ client.on('message', message =>{
 
 keepAlive()
 
-client.login('ODE3ODcxNzY3MzU4OTMwOTc0.YEP0cA.F_x2ZLnEsYU0V45mzP77DFdC86o');
+client.login('[REDACTED]');
