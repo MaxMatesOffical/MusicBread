@@ -27,8 +27,10 @@ client.on('message', message =>{
   const args = message.content.slice(prefix.length).split(/ +/);
   const command = args.shift().toLowerCase();
 
-  if(command === 'ping'){
-    message.channel.send((`🏓Music bread's Latency is ${Date.now() - message.createdTimestamp}ms`)
+   if(command === 'ping'){
+    client.commands.get('ping').execute(message, args)
+  } else if(command === 'github'){
+    client.commands.get('github').execute(message, args)
   }
 });
 
